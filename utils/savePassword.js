@@ -9,7 +9,7 @@ const savePassword = (password) => {
 		fs.write(id, password + os.EOL, null, "utf-8", () => {
 			// CLOSE THE FILE
 			fs.close(id, () => {
-				console.log(chalk.green("Password saved to passwords file"));
+				console.log(chalk.green("📂  Password saved to passwords file"));
 			});
 		});
 	});
